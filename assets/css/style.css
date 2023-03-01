@@ -96,11 +96,11 @@ ou
     font-size: 25px;
   }
 
-.form-login .erreur{
+/*.form-login .erreur{
     margin-top: 10px;
     color: white;
     font-size: 20px;
-}
+}*/
 
 .form-login .pas-de-compte{
     color: white;
@@ -355,6 +355,7 @@ button{
 }*/
 
 .erreur{
+    margin-top: 10px;
     font-size: 20px;
     color: red;
     background-color: #FFE8E8;
