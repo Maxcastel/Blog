@@ -3,23 +3,16 @@
   box-sizing: border-box;
 }
 
-/*body, html {
-    height: 100%;
-}
-
 body {
     background: linear-gradient(#141e30, #243b55);
-    background-size: cover;
-    background-repeat: no-repeat;
-}*/
-
-body {
-    background: linear-gradient(#141e30, #243b55);
-    height: 100vh;
-    width: 100vw;
+    /*height: 100vh;*/
+    min-height: 100vh;
+    width: 100%;
+    /*width: 100vw; largeur de 100vw qui correspond à la largeur totale de l'écran*/
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   
 
 .form-login{
@@ -34,7 +27,9 @@ body {
     /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);*/
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     width: 440px;
-    height: 375px;
+    /*height: 375px;*/
+    /*min-height: 375px;*/
+    /*height: auto;*/
     background: rgba(0,0,0,.5);
 }
 
@@ -129,6 +124,7 @@ ou
     text-decoration: none;
     /*border-radius: 5px;*/
     background: rgba(0,0,0,.5);
+    margin-bottom: 20px;
   }
   
 
@@ -176,7 +172,7 @@ ou
 }
 
 .form-change-infos{
-    margin: 30px auto; 
+    margin: 30px; 
     /*position: absolute;
     top: 50%;
     left: 50%;
@@ -184,7 +180,7 @@ ou
     padding: 40px 50px; 
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     width: 440px;
-    height: 520px;
+    /*height: 520px;*/
     background: rgba(0,0,0,.5);
 }
 
@@ -211,7 +207,7 @@ ou
 }
 
 .form-change-password{
-    margin: 30px auto; 
+    margin: 30px ; 
     /*position: absolute;
     top: 50%;
     left: 50%;
@@ -219,18 +215,35 @@ ou
     padding: 40px 50px; 
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     width: 440px;
-    height: 375px;
+    /*height: 375px;*/
     background: rgba(0,0,0,.5);
+    /*transition: transform .2s;*/ /*animation zoom*/
 }
+
+/*animation zoom*/
+/*.form-change-password:hover{
+    transform: scale(1.5);
+}*/
+
+#account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 #account h1{
     background: rgba(0,0,0,.5);
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     font-size: 50px;
     color: white;
-    margin-top: 10px;
+    margin: 20px 30px;
+    display: inline-block;
+    border-radius: 10px;
 }
+  
 
 /* createArticle.php */
 
@@ -313,7 +326,7 @@ button{
     /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);*/
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     width: 440px;
-    height: 585px;
+    /*height: 585px;*/
     background: rgba(0,0,0,.5);
 }
 

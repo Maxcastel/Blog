@@ -2,7 +2,7 @@
 
 class Comments extends Database{
 
-    public function createComment($content,	$author, /*$published_at,*/ $blog_id){
+    public function createComment($content,	$author, $blog_id){
 
         $db = $this->connectDB();
         
@@ -14,7 +14,6 @@ class Comments extends Database{
 
         $statment->bindValue(":content", $content, PDO::PARAM_STR);
         $statment->bindValue(":author", $author, PDO::PARAM_STR);
-        //$statment->bindValue(":published_at", $published_at, PDO::PARAM_STR);
 
         $statment->bindValue(":blog_id", $blog_id, PDO::PARAM_INT);
 

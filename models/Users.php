@@ -1,10 +1,7 @@
 <?php
-//c'est la classe fille de Database
 
 class Users extends Database{
-//La classe Users hérite de la classe Database et contient une méthode getAllUsers 
-//qui permet de récupérer tous les utilisateurs de la table users de la base de données.
-
+    
     public function getAllUsers()
     {
         $db = $this->connectDB();
@@ -25,7 +22,6 @@ class Users extends Database{
 
         $statment = $db->prepare($requete);
         
-        //bindValue est une fonction qui permet de lier une valeur à un nom de paramètre
         $statment->bindValue(":mail", $mail, PDO::PARAM_STR);
 
         $statment->execute();
@@ -54,9 +50,9 @@ class Users extends Database{
 
         $statment->execute();
 
-        $result = $statment->fetch();
+        $result = $statment->fetch(); 
         
-        return $result; //ou return $statment->fetch(); et delete l.56
+        return $result; 
     }
 
     public function createAccount($prenom, $nom, $email, $password){

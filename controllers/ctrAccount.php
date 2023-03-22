@@ -12,7 +12,7 @@ if (!isset($_SESSION['user'])){
   exit();
 }
 
-var_dump($_SESSION);
+//var_dump($_SESSION);
 
 
 /*var_dump($_SESSION);
@@ -69,8 +69,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
   
       if(empty($errors)){
 
-        $Users->changeInfos($_SESSION['user']['id'], $name, $lastname, $age, $telephone);
+        if ( $Users->changeInfos($_SESSION['user']['id'], $name, $lastname, $age, $telephone) )
         $success = true;
+
+        $_SESSION['user']['prenom'] = $_POST['name'];
+        $_SESSION['user']['nom'] = $_POST['lastname'];
+        $_SESSION['user']['age'] = $_POST['age'];
+        $_SESSION['user']['telephone'] = $_POST['telephone'];
       } 
 
     }

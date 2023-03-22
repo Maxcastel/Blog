@@ -25,6 +25,8 @@ $fichierTemporaire = file_get_contents($cheminImage);*/
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
+  var_dump($_FILES);
+
   //if(isset($_FILES['miniature'])){
 
     $fichierTemporaire = file_get_contents($_FILES['miniature']['tmp_name']);

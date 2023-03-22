@@ -13,12 +13,22 @@ include './layouts/header.php'
 
       <section id="commentaires">
         <p class="commentaire-titre">Commentaires</p>
+
         <div class="textareas">
 
         <?php if (!$commentaires) : ?>
           <p class="no-comments">Pas de commentaires pour le moment</p>
+        <?php endif; ?>
 
-        <?php else : ?>
+        <form action="readArticle.php?id=<?= $_GET['id'] ?>" method="POST">
+          <div>
+            <textarea class="logged" name="comment-content" cols="30" rows="10" placeholder="<?= $placeholder ?>" <?= isset($_SESSION['user']) ? '' : 'disabled' ?>></textarea>
+          </div>
+          <input type="<?= isset($_SESSION['user']) ? 'submit' : 'hidden' ?>" id="publier" value="Publier" name="publier">
+        </form>
+        <!--<?= isset($_SESSION['user']) ? ' ' : '<a href="Login.php" class="login-bouton"></a>' ?>-->
+
+        <?php if ($commentaires) : ?>
 
           <?php foreach ($commentaires as $commentaire) : ?>
 
@@ -39,14 +49,7 @@ include './layouts/header.php'
 
         <?php endif; ?>
 
-        <form action="readArticle.php?id=<?= $_GET['id'] ?>" method="POST">
-          <div>
-            <textarea class="logged" name="comment-content" cols="30" rows="10" placeholder="<?= $placeholder ?>" <?= isset($_SESSION['user']) ? '' : 'disabled' ?>></textarea>
-          </div>
-          <input type="<?= isset($_SESSION['user']) ? 'submit' : 'hidden' ?>" id="publier" value="Publier" name="publier">
-        </form>
-        <!--<?= isset($_SESSION['user']) ? ' ' : '<a href="Login.php" class="login-bouton"></a>' ?>-->
-
+        
 
       </section> 
     </main>
