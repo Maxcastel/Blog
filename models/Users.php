@@ -26,7 +26,6 @@ class Users extends Database{
 
         $statment->execute();
         
-        //fetch() retourne un tableau de tous les id
         $id = $statment->fetch();
 
         if ($id == false){
@@ -35,7 +34,6 @@ class Users extends Database{
 
         return $id['id'];
 
-        //return $id === false ? false : intval($id['id']);
     }
 
     public function getUser($id){
@@ -105,21 +103,6 @@ class Users extends Database{
         $statment->execute();
     }
 
-    /*public function userPassword($id, $password){
-        
-        $password = password_hash($password, PASSWORD_DEFAULT);
-        
-        $db = $this->connectDB();
-
-        $requete = "UPDATE users SET password = :password WHERE id = :id";
-
-        $statment = $db->prepare($requete);
-
-        $statment->bindValue(":password", $password, PDO::PARAM_STR);
-        $statment->bindValue(":id", $id, PDO::PARAM_INT);
-
-        $statment->execute();
-    }*/
-
 }
+
 ?>

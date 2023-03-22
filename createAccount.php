@@ -7,13 +7,6 @@ include './layouts/header.php';
   <section class="form-creer-compte">
     <form class="form" action="createAccount.php" method="POST">
     <?= isset($success) ? '<p class="success">Compte créé !</p>' : '' ?>
-    <!--condition ? exprSiVrai : exprSiFaux-->
-
-    <!--<?php if($success) : ?>
-            <p class="success">
-              Compte créé !
-            </p>
-    <?php endif; ?>-->
 
     <p class="connexion">Créer un compte</p>
     <div class="infos-users">

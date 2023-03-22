@@ -59,10 +59,6 @@ include './layouts/header.php'
         </section>
         <a class="bouton-creer-article" href="createArticle.php">Créer un article</a>
 
-        <!--<a href="createArticle.php">
-          <button>Créer un article</button>
-        </a>-->
-
     </main>
     
 <?php

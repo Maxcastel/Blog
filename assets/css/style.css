@@ -1,14 +1,11 @@
 * {
-  /* Une règle de normalize pour éviter d'avoir des box-sizing content-box par défaut*/
   box-sizing: border-box;
 }
 
 body {
     background: linear-gradient(#141e30, #243b55);
-    /*height: 100vh;*/
     min-height: 100vh;
     width: 100%;
-    /*width: 100vw; largeur de 100vw qui correspond à la largeur totale de l'écran*/
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -16,20 +13,13 @@ body {
   
 
 .form-login{
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/ 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px 50px; /*40px haut bas 50px gauche droite*/ /*top, right, bottom, left*/
-    /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);*/
+    padding: 40px 50px; 
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     width: 440px;
-    /*height: 375px;*/
-    /*min-height: 375px;*/
-    /*height: auto;*/
     background: rgba(0,0,0,.5);
 }
 
@@ -38,28 +28,12 @@ body {
     width: 100%;
 }
 
-/*label, input {
-    display: block;
-    margin-bottom: 6px;
-}
-
-label{
-    font-size: 20px;
-    color: white;
-}
-
-input{
-    width: 100%;
-    padding: 10px;
-    color: white;
-}*/
-
 .form-login .infos-users label {
     display: block;
     margin-bottom: 6px;
     font-size: 22px;
     color: white;
-} /*selectionne aussi input login*/
+} 
 
 .form-login .infos-users input {
     width: 100%;
@@ -71,12 +45,7 @@ input{
 
 .form-login .infos-users #email{
     margin-bottom: 12px;
-} /*ou 
-input[type="email"] {
 } 
-ou 
-#email { 
-}*/
 
 .login{
     width: 100%;
@@ -90,12 +59,6 @@ ou
     color: white;
     font-size: 25px;
   }
-
-/*.form-login .erreur{
-    margin-top: 10px;
-    color: white;
-    font-size: 20px;
-}*/
 
 .form-login .pas-de-compte{
     color: white;
@@ -122,7 +85,6 @@ ou
     padding: 10px 20px;
     color: white;
     text-decoration: none;
-    /*border-radius: 5px;*/
     background: rgba(0,0,0,.5);
     margin-bottom: 20px;
   }
@@ -143,21 +105,6 @@ ou
     margin-bottom: 6px;
 }
 
-/*.form-change-infos .erreur{
-    font-size: 20px;
-    color: red;
-    background-color: #FFE8E8;
-    padding: 10px;
-}
-
-.form-change-infos .success{
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: green;
-    background-color: #e5f5e5;
-    padding: 10px;
-}*/
-
 .soumettre{
     width: 100%;
     margin-top: 20px;
@@ -173,14 +120,9 @@ ou
 
 .form-change-infos{
     margin: 30px; 
-    /*position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
     padding: 40px 50px; 
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     width: 440px;
-    /*height: 520px;*/
     background: rgba(0,0,0,.5);
 }
 
@@ -208,23 +150,11 @@ ou
 
 .form-change-password{
     margin: 30px ; 
-    /*position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
     padding: 40px 50px; 
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     width: 440px;
-    /*height: 375px;*/
     background: rgba(0,0,0,.5);
-    /*transition: transform .2s;*/ /*animation zoom*/
 }
-
-/*animation zoom*/
-/*.form-change-password:hover{
-    transform: scale(1.5);
-}*/
-
 #account {
     display: flex;
     justify-content: center;
@@ -255,15 +185,9 @@ ou
 
 #form-creer-article{
     
-    margin: 30px 50px; /*30px haut bas 50px gauche droite*/
-    /*position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
+    margin: 30px 50px; 
     padding: 40px 50px; 
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    
-    /*height: 510px;*/
     background: rgba(0,0,0,.5);
 }
 
@@ -296,37 +220,14 @@ ou
     margin-bottom: 30px;
 }
 
-/*body{
-    margin-left: 20px;
-}
-
-.card{
-    margin-top: 20px;
-}
-
-button{
-    margin-top: 10px;
-}*/
-
-/*input{
-    width: 100%;
-}*/
-
-/* createAccount.php */
-
 .form-creer-compte{
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/ 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px 50px; /*40px haut bas 50px gauche droite*/ /*top, right, bottom, left*/
-    /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);*/
+    padding: 40px 50px; 
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     width: 440px;
-    /*height: 585px;*/
     background: rgba(0,0,0,.5);
 }
 
@@ -351,21 +252,6 @@ button{
     padding: 13px;
     font-size: 15px;
 }
-
-/*.form-creer-compte .erreur{
-    font-size: 20px;
-    color: red;
-    background-color: #FFE8E8;
-    padding: 10px;
-}
-
-.form-creer-compte .success{
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: green;
-    background-color: #e5f5e5;
-    padding: 10px;
-}*/
 
 .erreur{
     margin-top: 10px;
@@ -403,7 +289,6 @@ button{
     background-color: pink;
     margin: 50px;
     padding: 20px;
-    /*height: 100vh;*/
 }
 
 #lire-article .commentaire-titre{
@@ -440,10 +325,6 @@ button{
     margin-bottom: 5px;
 }
 
-/*#lire-article .comment{
-    margin-bottom: 10px;
-}*/
-
 #lire-article .commentaire{
     margin-bottom: 10px;
 }
@@ -466,85 +347,10 @@ button{
     margin-bottom: 6px;
 }
 
-/*#commentaires .not-logged{
-    width: 100%;
-    padding: 10px;
-    display: block;
-    margin-bottom: 6px;
-
-    opacity: 0.5;
-    pointer-events: none;
-}*/
-
 #commentaires #publier, #commentaires #se-connecter{
     padding: 5px;
     margin-bottom: 6px;
 }
-
-
-
-/*#form-creer-article .infos-article input{
-    width: 100%;
-    padding: 10px;
-    color: black;
-    display: block;
-    margin-bottom: 6px;
-}*/
-
-
-/*#lire-article .commentaires p:nth-child(3){
-   color: red;
-}
-
-#lire-article .commentaires p:nth-child(4){
-    color: blue;
- }
-
- #lire-article .commentaires p:nth-child(5){
-    color: green;
- }*/
-
-/*textarea::placeholder {
-
-}*/
-  
-
-
-
-
-
-
-
-
-
-
-
-  
 .xdebug-var-dump{
     color: white;
 }
-
-/*Flew grow
-
-https://codepen.io/anon/embed/krMwzK/9a9ad8fb040f5efaf4e749b49cae7281?default-tab=result&height=450&slug-hash=9a9ad8fb040f5efaf4e749b49cae7281&theme-id=1#result-box
-
-<ul class="flex-container">
-  <li class="flex-item">1</li>
-  <li class="flex-item">2</li>
-  <li class="flex-item">3</li>
-  <li class="flex-item">4</li>
-</ul>
-
-.flex-item:nth-of-type(1) { flex-grow: 1; }
-.flex-item:nth-of-type(2) { flex-grow: 1; }
-.flex-item:nth-of-type(3) { flex-grow: 2; }
-.flex-item:nth-of-type(4) { flex-grow: 1; }
-.flex-item:nth-of-type(5) { flex-grow: 1; }*/
-
-/*let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menu.addEventListener('click', () => {
-  menu.classList.toggle('bx-x');
-  navbar.classList.toggle('open');
-});*/

@@ -20,23 +20,6 @@ class Comments extends Database{
         $statment->execute();
     }
     
-    /*public function getComment($id){
-
-        $db = $this->connectDB();
-
-        $requete = "SELECT * FROM comments WHERE comments_id = :id";
-
-        $statment = $db->prepare($requete);
-
-        $statment->bindValue(":id", $id, PDO::PARAM_INT);
-
-        $statment->execute();
-
-        $result = $statment->fetch();
-        
-        return $result;
-    }*/
-    
     public function getAllComments(){
 
         $db = $this->connectDB();
@@ -68,26 +51,6 @@ class Comments extends Database{
 
         return $comments;
     }
-
-    /*public function getAllCommentsByProductId(){
-        
-    }*/
-
-
-    /*public function NombreComments(){
-
-        $db = $this->connectDB();
-
-        $requete = "SELECT COUNT(*) FROM comments";
-
-        $statment = $db->prepare($requete);
-
-        $statment->execute();
-
-        $resultat = $statment->fetchColumn();
-        
-        return $resultat;
-    }*/
 
 }
 

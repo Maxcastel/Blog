@@ -12,37 +12,17 @@ if (!isset($_SESSION['user'])){
   exit();
 }
 
-//var_dump($_SESSION);
-
-
-/*var_dump($_SESSION);
-var_dump($_SESSION['user']);
-var_dump($_SESSION['user']['role']);
-
-var_dump($_SESSION['user']['prenom']." ".$_SESSION['user']['nom']);
-
-var_dump($_POST);*/
-
-//var_dump($_SESSION['user']['prenom']);
-//var_dump($_POST);
-
-//$success = false;
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-
-  //$success = false;
 
   $Users = new Users();
 
   $errors = [];
   $regexName = '/^[a-zA-ZÀ-ÿ]{2,30}$/' ;
-  /*"/^(?=.{2,30}$)[\p{L}'\-\s]+$/u"*/
   $regexTelephone = '/^0\d{9}$/';
   $regexAge = '/^\d{2,3}$/';
 
   extract($_POST);
-
-  //var_dump($_POST);
         
   if(isset($_POST['form_infos'])){
 
@@ -89,7 +69,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $errors['password'] = "Les mots de passe doivent être identiques";
       }
 
-      // SI NOUS N'AVONS AUCUNE ERREUR, ALORS ON PEUT INSERER EN BASE DE DONNEES !
       if(empty($errors)){
 
         $passwordHash = password_hash($password, PASSWORD_BCRYPT);
@@ -108,30 +87,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     exit();
   }
 
-  /*else if(isset($_POST['form_infos'])){
-
-    $name = $_POST['name'];
-    $lastname = $_POST['lastname'];
-    $age = $_POST['age'];
-    $telephone = $_POST['telephone'];
-
-    $Users->changeInfos($_SESSION['user']['id'], $name, $lastname, $age, $telephone);
-  }*/
-
-  /*else if(isset($_POST['form_password'])){
-
-    $password = $_POST['password'];
-    $password2 = $_POST['password2'];
-
-    if ($password == $password2){
-      $passwordHash = password_hash($password, PASSWORD_BCRYPT);
-
-      $Users->changePassword($_SESSION['user']['id'], $passwordHash);
-    }
-
-  }*/
 }
-
-//var_dump($_SESSION['user']);
 
 ?>

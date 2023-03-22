@@ -26,7 +26,6 @@ include './layouts/header.php'
           </div>
           <input type="<?= isset($_SESSION['user']) ? 'submit' : 'hidden' ?>" id="publier" value="Publier" name="publier">
         </form>
-        <!--<?= isset($_SESSION['user']) ? ' ' : '<a href="Login.php" class="login-bouton"></a>' ?>-->
 
         <?php if ($commentaires) : ?>
 

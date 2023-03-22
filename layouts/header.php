@@ -23,16 +23,6 @@
 
                 echo '<li><a href="account.php">Mon compte</a></li>';
                 echo '<li><a href="logout.php">Se deconnecter</a></li>';
-
-                /*if($_SESSION['user']['role'] == "1"){
-                  echo '<li><a href="panelAdmin.php">Admin</a></li>';
-                  echo '<li><a href="account.php">Mon compte</a></li>';
-                  echo '<li><a href="logout.php">Se deconnecter</a></li>';
-                }
-                else{
-                  echo '<li><a href="account.php">Mon compte</a></li>';
-                  echo '<li><a href="logout.php">Se deconnecter</a></li>';
-                }*/
           }
           else{
             echo '<li><a href="login.php">Se connecter</a></li>';
@@ -40,23 +30,5 @@
           }
           ?>
       </ul>
-
-      <!--<ul>
-        <li><a href="index.php">Accueil</a></li>
-
-        <?php if(isset($_SESSION['user'])): ?>
-
-            <?php if($_SESSION['user']['role'] == "1"): ?>
-              <li><a href="panelAdmin.php">Admin</a></li>
-            <?php endif; ?>
-
-            <li><a href="account.php">Mon compte</a></li>
-            <li><a href="logout.php">Se deconnecter</a></li>
-
-        <?php else: ?>
-          <li><a href="login.php">Se connecter</a></li>
-          <li><a href="createAccount.php">Creer un compte</a></li>
-        <?php endif; ?>
-      </ul>-->
     </nav>
   </header>

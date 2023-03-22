@@ -3,9 +3,6 @@
 }
 
 header {
-    /*background: linear-gradient(to left,#243b55, #141e30);*/
-    /*background: linear-gradient(to right,#141e30, #243b55);*/
-    /*background: linear-gradient(to right,rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8));*/
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.5));
 
     width: 100%;
@@ -42,7 +39,6 @@ li a:after {
 
   li a:hover:after {
     width: 90%;
-    /*background: #444;*/
     background: white;
   }
 
