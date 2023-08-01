@@ -3,6 +3,7 @@ require './controllers/ctrLogin.php';
 include './layouts/header.php'
 ?>
 
+<main id="page-login">
 
   <section class="form-login">
     <form class="form" action="login.php" method="POST">
@@ -30,6 +31,7 @@ include './layouts/header.php'
     </form>
   </section>
 
+</main>
 
 <?php
 include './layouts/footer.php';

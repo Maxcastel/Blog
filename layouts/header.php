@@ -18,7 +18,7 @@
           if(isset($_SESSION['user'])){
 
                 if($_SESSION['user']['role'] == "1"){
-                  echo '<li><a href="panelAdmin.php">Admin</a></li>';
+                  echo '<li><a href="admin/accueil.php">Admin</a></li>';
                 }
 
                 echo '<li><a href="account.php">Mon compte</a></li>';

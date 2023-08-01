@@ -3,6 +3,7 @@ require_once './controllers/ctrCreateAccount.php';
 include './layouts/header.php';
 ?>
 
+<main id="page-create-account">
 
   <section class="form-creer-compte">
     <form class="form" action="createAccount.php" method="POST">
@@ -37,9 +38,14 @@ include './layouts/header.php';
       <div>
         <input class="creer-compte" type="submit" value="Creer un compte" name="submit-creer-compte">
       </div>
-      <a href="login.php" class="se-connecter">Se connecter</a>
+      <div class="login">
+        <p class="deja-un-compte">Déjà un compte ?</p>
+        <a href="login.php" class="se-connecter">Se connecter</a>
+      </div>  
     </form>
   </section>
+
+</main>
 
 <?php
 include './layouts/footer.php';

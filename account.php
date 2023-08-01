@@ -31,7 +31,7 @@ include './layouts/header.php'
               <?= isset($errors['telephone']) ? '<p class="erreur">'. $errors['telephone'] .'</p>' : '' ?>
               <input type="tel" id="telephone" name="telephone" value="<?= $_SESSION['user']['telephone'] ?>">
             </div>
-              <input class="soumettre" type="submit" id="soumettre" value="Soumettre" name="form_infos">
+              <input class="soumettre" type="submit" id="soumettre" value="Modifier" name="form_infos">
           </form>
         </section>
 
@@ -48,7 +48,7 @@ include './layouts/header.php'
               <label for="password2">Confirmer le mot de passe :</label>
               <input type="password" id="password2" name="password2" placeholder="************">
             </div>
-              <input class="soumettre" type="submit" id="soumettre2"value="Soumettre" name="form_password">
+              <input class="soumettre" type="submit" id="soumettre2"value="Modifier" name="form_password">
           </form>
         </section>
 

@@ -31,10 +31,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             unset($user['password']);
             $_SESSION['user'] = $user;
 
-            header('Location: account.php');
-            exit();
-
-        } else {
+            if($user['role'] == 1){
+              header('Location: ./admin/accueil.php');
+              exit();
+            }
+            else{
+              header('Location: account.php');
+              exit();
+            }
+        } 
+        else {
           $error = true;
         }
     }

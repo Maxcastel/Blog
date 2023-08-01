@@ -46,4 +46,5 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  /*align-items: flex-start;*/ /* enlève l'espace en dessous du bouton 'Voir l'article' (ou start) */
 }
